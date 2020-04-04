@@ -3,7 +3,7 @@ package ids_Monitoring;
 public class OssecAlert {
 	
 	private Rules rule;
-	private int id;
+	private String id;
 	private String TimeStamp;
 	private String decoder;
 	private String location;
@@ -24,11 +24,14 @@ public class OssecAlert {
 	public String getRuleComment() {
 	    return rule.getComment();
 	}
+	public int getRuleSidid() {
+	    return rule.getSidid();
+	}
 	public String getfull_log() {
 	    return full_log;
 	}
 	
-	public int getID() {
+	public String getID() {
 	    return id;
 	}
  	public class Rules {
@@ -39,6 +42,9 @@ public class OssecAlert {
 		
 		public String getComment() {
 			return comment;
+		}
+		public int getSidid() {
+			return sidid;
 		}
 		public int getLevel() {
 			return level;
