@@ -436,4 +436,3 @@ propertyAssertion(Z,'http://www.semanticweb.org/valle/ontologies/2019/11/untitle
 propertyAssertion(Y,'http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#materializesIn',A).
 
 
-

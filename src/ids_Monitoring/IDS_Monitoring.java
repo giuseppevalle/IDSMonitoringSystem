@@ -13,8 +13,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import org.jpl7.*;
-		
-		
+
 public class IDS_Monitoring {
 	private static List<String> symtomps;
 	public static void main(String[] args) throws URISyntaxException {
@@ -78,7 +77,10 @@ public class IDS_Monitoring {
 			System.out.println(res[i]);
 		}
 		
-		q = new Query("getAttackScenariobyAttack(X,Y)");
+		q = new Query("getAttackScenariobyAttack(X,Y)"); //X è attacco, Z è penetration tester, A sono i threat, Y è attack scenario 
+		//devo fare qualcosa che quando 2 threat dell'attack scenario sono stati rilevati allora è possibile che l'attack scenario sia in funzione
+		//1: modificare ontologia (aggiungere individui dei threat e questa nuova proprietà dei threat, e anche proprietà detected per l'attack scenario) 
+		//2: creare regole per azionare attack scenario se ci sono almeno 2 threat detected
 		  
 		Map<String,Term>[] res1 = q.allSolutions();
 		for(int i=0; i<res.length; i++) { //devo aggiustare questo, funziona ma va scritto meglio

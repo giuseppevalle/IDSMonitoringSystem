@@ -190,7 +190,7 @@ annotationAssertion('http://www.w3.org/2000/01/rdf-schema#label','http://www.co-
 annotationAssertion('http://www.w3.org/2000/01/rdf-schema#label','http://www.co-ode.org/ontologies/ont.owl#OWLClass_e6c9f1cf_4283_48cd_817a_f5c3752bb0ae',literal(lang(en,'SaaS'))).
 annotationAssertion('http://www.w3.org/2000/01/rdf-schema#label','http://www.co-ode.org/ontologies/ont.owl#OWLClass_fb3a2355_82a0_416b_9383_c31d7e618a3e',literal(lang(en,'SystemComponet')))
 propertyAssertion('http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#Error400PathWordpressTheme','http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#OssecRuleID','311010').
-propertyAssertion('http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#InsicureSSHConnection','http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#OssecRuleID','5706'.)
+propertyAssertion('http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#InsicureSSHConnection','http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#OssecRuleID','5706').
 propertyAssertion('http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#MultiplePortsentryAttackAlert','http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#OssecRuleID','160101').
 propertyAssertion('http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#MultipleWebserverError400','http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#OssecRuleID','311011').
 propertyAssertion('http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#NewPortOnListenStatus','http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#OssecRuleID','533').
