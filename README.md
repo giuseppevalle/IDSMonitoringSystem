@@ -3,6 +3,7 @@ I made this project for my Master Thesys. The goal is to create a rule-based Int
 It is developed to detect attacks in cloud structures (such as a web server in cloud).
 
 ## Built With
+The following are required for the usage:
 * [Ossec](https://www.ossec.net/) - A host-based IDS configured as agent/server. 
 * [Snort](https://www.snort.org/) - A Network Intrusion Detection & Prevention System on each node of the architecture.
 * [GSON](https://github.com/google/gson) - Used to parser the alerts genereted by ossec.
@@ -21,9 +22,12 @@ In the function getListAlertsFromJSON():
 ```java
 reader = new BufferedReader(new FileReader(rightPath));
 ```
+Next, you have to add as external library the jpl.jar available for SWI-Prolog (more info [here](https://github.com/SWI-Prolog/packages-jpl/wiki/Installing-&-Using-JPL)).
+
+
 ## Usage
 The current version provide some attack's simptoms related to the correspondent alerts, you can just run it after the installation and check if those attacks and attack scenario are detected.
 
 ## Contribution
-The ontology can be expanded with new attacks, simptomps, alerts, etc increasingly the accuracy of the detection.
+The ontology can be expanded with new attacks, simptomps, alerts, etc. increasingly the accuracy of the detection.
 
