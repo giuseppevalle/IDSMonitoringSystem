@@ -1,3 +1,4 @@
+:- dynamic propertyAssertion/3.
 subClassOf('http://www.co-ode.org/ontologies/ont.owl#OWLClass_30a5d3d0_78e3_46e1_978c_33ca6d62a4e4','http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#Service').
 subClassOf('http://www.co-ode.org/ontologies/ont.owl#OWLClass_43bde57d_94bf_423a_9a9b_6c04c1c2041c','http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#Asset').
 subClassOf('http://www.co-ode.org/ontologies/ont.owl#OWLClass_55355d8f_0d28_4f47_9d7d_b6f8ab3c5151','http://www.co-ode.org/ontologies/ont.owl#OWLClass_30a5d3d0_78e3_46e1_978c_33ca6d62a4e4').
@@ -406,7 +407,7 @@ listaClassi(Lista):-findall(X,class(X),Lista).
 replace_existing_fact(OldFact, NewFact) :-
     call(OldFact),
     retract(OldFact),
-    assertz(NewFact).
+    assert(NewFact).
 
 setDefaultLevelAttack(X):-(classAssertion('http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#Attack',X),
 assert(propertyAssertion(X,'http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#Level',0))).
@@ -431,7 +432,7 @@ retract(propertyAssertion(X,'http://www.semanticweb.org/valle/ontologies/2019/11
 getAttackwithLevelNot0(X,Z):-(propertyAssertion(X,'http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#Level',Z),
 Z\=0).
 
-getAttackScenariobyAttack(X,Y):-propertyAssertion(X,'http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#isCausedBy',Z),
+getAttackScenario(X,Y):-propertyAssertion(X,'http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#isCausedBy',Z),
 propertyAssertion(Z,'http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#implements',A),
 propertyAssertion(Y,'http://www.semanticweb.org/valle/ontologies/2019/11/untitled-ontology-31#materializesIn',A).
 

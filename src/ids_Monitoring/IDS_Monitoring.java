@@ -157,6 +157,7 @@ public class IDS_Monitoring {
 		}
 		return output;
 	}
+
 	public static List<String> executeQueryAttackBySymptom() throws URISyntaxException { 
 		List<String> output = new ArrayList<>();
 		Query q = new Query("attackBySymptom(X,Y)");
@@ -199,4 +200,5 @@ public class IDS_Monitoring {
 		q.allSolutions();
 		System.out.println("Setting default values...");
 	}
+
 }
